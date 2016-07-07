@@ -7,16 +7,18 @@
     %meta{:name => "description", :content => "Lara Templemore-Walters Coding Portfolio Page"}
 
     %link{:rel => :stylesheet, :type => :"text/css", :href => "stylesheets/foundation.css"}
-    %link{:rel => :stylesheet, :type => :"text/css", :href => "stylesheets/foundation.min.css"}
     %link{:rel => :stylesheet, :type => :"text/css", :href => "stylesheets/site.css.scss"}
 
-    %script{:src => "javascript/foundation.js"}
-    %script{:src => "javascript/foundation.mini.js"}
-    %script{:src => "javascript/jquery.js"}
+    %script{:src => "javascripts/vendor/foundation.js"}
+    %script{:src => "javascripts/vendor/what-input.js"}
+    %script{:src => "javascripts/vendor/jquery.js"}
+    %script{:src => "javascripts/all.js"}
     %script{:src => "https://use.fontawesome.com/f5e451c26b.js"}
     :javascript
 
   %body
     = partial 'partials/header'
     %h1 Welcome to Lara's Portfolio Page
+    = yield
     = partial 'partials/footer'
+    = javascript_include_tag :all

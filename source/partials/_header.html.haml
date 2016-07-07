@@ -1,12 +1,14 @@
-%header.title-bar{"data-hide-for" => "small", "data-responsive-toggle" => "realEstateMenu"}
+%header
+.title-bar{"data-hide-for" => "small", "data-responsive-toggle" => "Menu"}
   %button.menu-icon{"data-toggle" => "", :type => "button"}
   .title-bar-title Menu
-#realEstateMenu.top-bar
+#Menu.top-bar
   .top-bar-left
     %ul.menu{"data-responsive-menu" => "accordion"}
-      %li.menu-text
-        %a{:href => "/"} Lara's Portfolio
+      %li.menu-text Lara's Protfolio
   .top-bar-right
     %ul.menu
-      %li About Me
-      %li My Portfolio
+      %li
+        %a{:href => "#"} About Me
+      %li
+        %a{:href => "#"} My Portfolio
