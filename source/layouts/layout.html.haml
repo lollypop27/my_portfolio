@@ -1,16 +1,22 @@
 !!!
 %html.no-js{:lang => "en"}
   %head
+    %title Lara Templemore-Walters Coding Portfolio
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:name => "description", :content => "Lara Templemore-Walters Coding Portfolio Page"}
-    %title Lara Templemore-Walters Coding Portfolio
-    %link{:rel => :stylesheet, :type => :"text/css", :href => "/source/stylesheets/foundation.css"}
-    %link{:rel => :stylesheet, :type => :"text/css", :href => "/source/stylesheets/foundation.min.css"}
-    %link{:rel => :stylesheet, :type => :"text/css", :href => "/source/stylesheets/_normalize.scss"}
-    %script{:src => "source/javascript/foundation.js"}
-    %script{:src => "source/javascript/foundation.mini.js"}
-    %script{:src => "source/javascript/jquery.js"}
+
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "stylesheets/foundation.css"}
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "stylesheets/foundation.min.css"}
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "stylesheets/site.css.scss"}
+
+    %script{:src => "javascript/foundation.js"}
+    %script{:src => "javascript/foundation.mini.js"}
+    %script{:src => "javascript/jquery.js"}
+    %script{:src => "https://use.fontawesome.com/f5e451c26b.js"}
     :javascript
 
   %body
+    = partial 'partials/header'
+    %h1 Welcome to Lara's Portfolio Page
+    = partial 'partials/footer'
