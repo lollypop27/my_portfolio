@@ -1,13 +1,16 @@
-!!! 5
-%html
+!!!
+%html.no-js{:lang => "en"}
   %head
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
     %meta{:charset => "utf-8"}/
-    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}/
-    / Use title if it's in the page YAML frontmatter
-    %title= current_page.data.title || "Middleman"
-    %link{:href => "//fonts.googleapis.com/css?family=Lato:300,400", :rel => "stylesheet", :type => "text/css"}/
-    = stylesheet_link_tag :site
-    = javascript_include_tag :all
-  %body{:class => page_classes}
-    = yield
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:name => "description", :content => "Lara Templemore-Walters Coding Portfolio Page"}
+    %title Lara Templemore-Walters Coding Portfolio
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "/source/stylesheets/foundation.css"}
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "/source/stylesheets/foundation.min.css"}
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "/source/stylesheets/_normalize.scss"}
+    %script{:src => "source/javascript/foundation.js"}
+    %script{:src => "source/javascript/foundation.mini.js"}
+    %script{:src => "source/javascript/jquery.js"}
+    :javascript
+
+  %body
