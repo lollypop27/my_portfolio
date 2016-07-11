@@ -9,6 +9,7 @@ gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 #Template engine
 gem 'haml'
+gem 'poltergeist'
 
 group :development, :test do
   gem 'capybara'
