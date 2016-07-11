@@ -1,3 +1,4 @@
+require 'extensions/build_cleaner'
 ###
 # Page options, layouts, aliases and proxies
 ###
