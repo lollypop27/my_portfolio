@@ -23,7 +23,8 @@ html {
    * Remove default margin.
    */
 body {
-  margin: 0; }
+  margin: 0;
+background-color: #4C4E5B;}
 
 /* HTML5 display definitions
      ========================================================================== */
@@ -379,8 +380,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
-  background: #fefefe;
+  color: #fff;
+  background: #4C4E5B;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1259,12 +1260,12 @@ h6 {
     font-size: 1rem; } }
 
 a {
-  color: #2199e8;
+  color: #000;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #1585cf; }
+    color: #4C4E5B; }
   a img {
     border: 0; }
 
@@ -1995,16 +1996,15 @@ select {
   border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
   position: relative;
-  color: #0a0a0a;
-  background-color: white; }
+  color: #000;
+  background-color: #E84534; }
   .callout > :first-child {
     margin-top: 0; }
   .callout > :last-child {
     margin-bottom: 0; }
   .callout.primary {
     background-color: #def0fc; }
-  .callout.secondary {
-    background-color: #ebebeb; }
+  .callout.secondary { }
   .callout.success {
     background-color: #e1faea; }
   .callout.warning {
@@ -3358,7 +3358,7 @@ table.hover tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #E84534; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -4146,3 +4146,7 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
+
+.footer{
+  background-color: #E84534;
+}
