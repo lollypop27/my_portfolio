@@ -383,9 +383,9 @@
   function hyphenate(str) {
     return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
   }
-}(jQuery);
-'use strict';
-!function ($) {
+// }(jQuery);
+// 'use strict';
+// !function ($) {
 
   // Default set of media queries
   var defaultQueries = {

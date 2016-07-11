@@ -3391,7 +3391,9 @@ table.hover tr:nth-of-type(even):hover {
   float: left; }
 
 .top-bar-right {
-  float: right; }
+  float: right;
+  margin-top: 0.8rem;
+  font-weight: bold; }
 
 .hide {
   display: none !important; }

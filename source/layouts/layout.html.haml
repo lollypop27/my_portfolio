@@ -2,18 +2,17 @@
 %html
   %head
     %title Lara Templemore-Walters Coding Portfolio
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %meta{:name => "description", :content => "Lara Templemore-Walters Coding Portfolio Page"}
+    %meta{content: 'IE=edge', 'http-equiv' => 'X-UA-Compatible'}
+    %meta{content: 'width = device-width,initial-scale = 1.0,minimum-scale = 1.0,maximum-scale = 1.0,user-scalable = no name=viewport'}
+    %meta{name: 'description', content: 'Lara Templemore-Walters Coding Portfolio Page'}
 
-    %link{:rel => :stylesheet, :type => :"text/css", :href => "/stylesheets/foundation.css"}
-    %link{:rel => :stylesheet, :type => :"text/css", :href => "/stylesheets/site.css.scss"}
+    %link{rel: 'stylesheet', type: 'text/css', href: '/stylesheets/foundation.css'}
+    -# = stylesheet_include_tag :site
 
-    %script{:src => "/javascripts/app.js"}
-    %script{:src => "/javascripts/vendor/foundation.js"}
-    %script{:src => "/javascripts/vendor/jquery.js"}
-    %script{:src => "/javascripts/vendor/what-input.js"}
-    %script{:src => "https://use.fontawesome.com/f5e451c26b.js"}
+    %script{src: '/javascripts/vendor/foundation.js'}
+    %script{src: '/javascripts/vendor/jquery.js'}
+    %script{src: '/javascripts/vendor/what-input.js'}
+    %script{src: '//use.fontawesome.com/f5e451c26b.js'}
     :javascript
 
   %body
@@ -21,4 +20,4 @@
     = yield
     = partial 'partials/footer'
 
-    = javascript_include_tag :app
+    = javascript_include_tag :all

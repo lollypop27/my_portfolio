@@ -4,3 +4,4 @@ require 'spec_helper'
     before do
       visit '/about'
   end
+end

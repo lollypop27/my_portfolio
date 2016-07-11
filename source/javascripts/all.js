@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
   var flash = $('#flash');
   if (flash.length > 0) {
