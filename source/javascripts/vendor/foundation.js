@@ -385,7 +385,6 @@
   }
 }(jQuery);
 'use strict';
-
 !function ($) {
 
   // Default set of media queries
