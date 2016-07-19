@@ -8,7 +8,9 @@
     %p.lead Here you will see the journey of my bootcamp coding experience at Code Academy
 .row.small-up-2.medium-up-3.large-up-4
   .column
-  - data.portfolio.each do |portfolio|
-    %img.portfolio{:src => "http://placehold.it/550x550"}/
+  - data.data.portfolio.each do |portfolio|
+    %img{:src => "/images/#{portfolio.image}"}
     %h5= portfolio[:name]
     %p= portfolio[:description]
+    %p.button= portfolio[:url]
+    <yield>

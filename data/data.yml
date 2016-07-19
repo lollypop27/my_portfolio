@@ -1,0 +1,35 @@
+portfolio:
+  - image: dj.jpg
+    name: My First Website
+    description: Simple HTML5 site I've build during the PrepCourse
+    url: http://lollypop27.github.io/
+
+  - image: atm.png
+    name: ATM Challenge
+    description: Building an ATM machine with Ruby
+    url: https://github.com/lollypop27/atm_challenge
+
+  - image: library.png
+    name: Library Challenge
+    description: Building a library of books with Ruby
+    url: https://github.com/lollypop27/library-challenge
+
+  - image: fizzbuzz_ruby.jpg
+    name: FizzBuzz
+    description: My first test driven ruby project
+    url: https://github.com/lollypop27/fizz_buzz
+
+  - image: BMI.png
+    name: BMI Calculator
+    description: Building a BMI calculator with javascript
+    url: https://lollypop27.github.io/BMI/
+
+  - image: fizzbuzz_js.png
+    name: FizzBuzz Javascript
+    description: The javascript version of FizzBuzz
+    url: https://github.com/lollypop27/fizz_buzz_js
+
+  - image: slow_food.png
+    name: Slow Food Website
+    description: Building an online food ordering website
+    url: https://github.com/lollypop27/slow_food_june

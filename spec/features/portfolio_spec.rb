@@ -2,14 +2,11 @@ require 'spec_helper'
 
   describe 'portfolio', type: :feature do
     before do
-      visit '/portfolio'
+      visit '/portfolio.html'
   end
-  
-  it 'displays project list' do
-   expect(page).to have_css '.portfolio'
-   within '.portfolio' do
-     expect(page).to have_content 'My First Website'
-     expect(page).to have_content 'FizzBuzz'
-   end
- end
+
+  it 'displays the correct heading' do
+    expect(page).to have_selector('h1', text: 'My World of Coding and Design')
+  end
+
 end
