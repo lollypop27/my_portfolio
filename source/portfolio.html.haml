@@ -9,7 +9,6 @@
 .row.small-up-2.medium-up-3.large-up-4
   .column
   - data.portfolio.each do |portfolio|
-    %img.thumbnail{:src => "http://placehold.it/550x550"}/
+    %img.portfolio{:src => "http://placehold.it/550x550"}/
     %h5= portfolio[:name]
     %p= portfolio[:description]
-  
