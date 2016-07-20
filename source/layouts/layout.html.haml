@@ -7,6 +7,7 @@
     %meta{name: 'description', content: 'Lara Templemore-Walters Coding Portfolio Page'}
 
     %link{rel: 'stylesheet', type: 'text/css', href: '/stylesheets/foundation.css'}
+    %link{href: '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel: 'stylesheet'}
     -# = stylesheet_include_tag :site
 
     %script{src: '/javascripts/vendor/foundation.js'}
@@ -16,6 +17,33 @@
     :javascript
 
   %body
+    %nav.social
+      %ul
+        %li
+          %a{href: 'http://twitter.com/larawalters'}
+            Twitter
+            %i.fa.fa-twitter
+        %li
+          %a{href: 'https://www.facebook.com/lollypop27'}
+            Facebook
+            %i.fa.fa-facebook
+        %li
+          %a{href: 'https://za.pinterest.com/laratemplemorew/'}
+            Pinterest
+            %i.fa.fa-pinterest
+        %li
+          %a{href: 'http://www.linkedin.com/in/lara-lee-templemore-walters-a565a1a?trk=hp-identity-name'}
+            Linked In
+            %i.fa.fa-linkedin
+        %li
+          %a{href: 'https://plus.google.com/u/0/+LaraTemplemoreWalters'}
+            Google +
+            %i.fa.fa-google-plus
+        %li
+          %a{href: 'https://www.instagram.com/lollypop_27/?hl=en'}
+            Instagram
+            %i.fa.fa-instagram
+
     = partial 'partials/header'
     = yield
     = partial 'partials/footer'

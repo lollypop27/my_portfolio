@@ -13,6 +13,10 @@ require 'spec_helper'
     end
   end
 
+  it 'renders social media links' do
+    expect(page).to have_content 'Twitter'
+  end
+
   it 'renders footer partial' do
   expect(page).to have_selector 'footer'
   within 'footer' do
