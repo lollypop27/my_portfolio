@@ -6,8 +6,8 @@
   .row.column
     %h1 My World of Coding and Design
     %p.lead Here you will see the journey of my bootcamp coding experience at Code Academy
-.row.small-up-2.large-up-4
-  .columns
+.row.small-up-2.medium-up-3.large-up-4
+  .column
   - data.data.portfolio.each do |portfolio|
     %img.thumbnail{:src => "/images/#{portfolio.image}"}
     %h5= portfolio[:name]
