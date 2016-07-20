@@ -1,0 +1,15 @@
+.title-bar.hide-for-large
+  .title-bar-left
+    %button.menu-icon{'data-open' => 'my-info', :type => 'button'}
+    %span.title-bar-title Blog
+.callout.primary
+  .row.column
+    %h1 My Blogging Journey
+    %p.lead Sharing my thoughts with you from time to time
+
+.row.medium-8.large-7.columns
+  .blog-post
+  - data.data.blog.each do |blog|
+    %small= blog[:date]
+    %h3= blog[:title]
+    %p= blog[:text]
