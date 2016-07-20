@@ -1,0 +1,26 @@
+.wrapper
+  #main
+    %form#contact-form{action: "/contact.html", method: 'post'}
+      %h3 Get in touch
+      %div
+        %label
+          %span Name: (required)
+          %input{autofocus: '', placeholder: 'Please enter your name', required: '', tabindex: "1", type: "text"}/
+      %div
+        %label
+          %span Email: (required)
+          %input{placeholder: "Please enter your email address", required: "", tabindex: "2", type: "email"}/
+      %div
+        %label
+          %span Telephone: (required)
+          %input{placeholder: "Please enter your number", required: "", tabindex: "3", type: "tel"}/
+      %div
+        %label
+          %span Website: (required)
+          %input{placeholder: "Begin with http://", required: "", tabindex: "4", type: "url"}/
+      %div
+        %label
+          %span Message: (required)
+          %textarea{placeholder: "Include all the details you can", required: "", tabindex: "5"}
+      %div
+        %button#contact-submit{name: "submit", type: "submit"} Send Email
