@@ -12,4 +12,4 @@
     %img.thumbnail{:src => "/images/#{portfolio.image}"}
     %h5= portfolio[:name]
     %p= portfolio[:description]
-    %a.button.expanded{:href => "portfolio[:url]"} View
+    %a.button.expanded{:href => "#{portfolio.url}", :target => "_blank"} View
