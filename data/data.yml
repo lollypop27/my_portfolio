@@ -33,3 +33,8 @@ portfolio:
     name: Slow Food Website
     description: Building an online food ordering website
     url: https://github.com/lollypop27/slow_food_june
+
+blog:
+  - title:
+    text:
+    date:
