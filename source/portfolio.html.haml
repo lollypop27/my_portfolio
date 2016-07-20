@@ -6,10 +6,11 @@
   .row.column
     %h1 My World of Coding and Design
     %p.lead Here you will see the journey of my bootcamp coding experience at Code Academy
-.row.small-up-2.medium-up-3
+.row.small-2
   .column
-  - data.data.portfolio.each do |portfolio|
-    %img.thumbnail{src: "/images/#{portfolio.image}"}
-    %h5= portfolio[:name]
-    %p= portfolio[:description]
-    %a.button.expanded{href: "#{portfolio.url}", target: '_blank'} View
+    - data.data.portfolio.each_slice(3) do |group|
+      - group.each do |portfolio|
+        %img.thumbnail{src: "/images/#{portfolio.image}"}
+        %h5= portfolio[:name]
+        %p= portfolio[:description]
+        %a.button.expanded{href: "#{portfolio.url}", target: '_blank'} View
