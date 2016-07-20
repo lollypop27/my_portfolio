@@ -2,10 +2,9 @@
   .title-bar-left
     %button.menu-icon{'data-open' => 'my-info', type: 'button'}
     %span.title-bar-title My world of Coding and Design
-.callout.primary
-  .row.column
-    %h1 My World of Coding and Design
-    %p.lead Here you will see the journey of my bootcamp coding experience at Code Academy
+.row.column
+  %h1 My World of Coding and Design
+  %p.lead Here you will see the journey of my bootcamp coding experience at Code Academy
 .row.small-2
   .column
     - data.data.portfolio.each_slice(3) do |group|
