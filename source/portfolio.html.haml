@@ -1,15 +1,15 @@
 .title-bar.hide-for-large
   .title-bar-left
-    %button.menu-icon{'data-open' => 'my-info', :type => 'button'}
+    %button.menu-icon{'data-open' => 'my-info', type: 'button'}
     %span.title-bar-title My world of Coding and Design
 .callout.primary
   .row.column
     %h1 My World of Coding and Design
     %p.lead Here you will see the journey of my bootcamp coding experience at Code Academy
-.row.small-up-2.medium-up-3.large-up-4
+.row.small-up-2.medium-up-3
   .column
   - data.data.portfolio.each do |portfolio|
-    %img.thumbnail{:src => "/images/#{portfolio.image}"}
+    %img.thumbnail{src: "/images/#{portfolio.image}"}
     %h5= portfolio[:name]
     %p= portfolio[:description]
-    %a.button.expanded{:href => "#{portfolio.url}", :target => "_blank"} View
+    %a.button.expanded{href: "#{portfolio.url}", target: '_blank'} View
