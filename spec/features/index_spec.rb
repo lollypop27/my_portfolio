@@ -13,8 +13,8 @@ require 'spec_helper'
     end
   end
 
-  it 'renders social media links' do
-    expect(page).to have_content 'Twitter'
+  it 'shows link to facebook' do
+    expect(page).to have_css 'fa-facebook'
   end
 
   it 'renders footer partial' do
