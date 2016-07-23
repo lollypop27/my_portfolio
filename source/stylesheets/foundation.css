@@ -4151,6 +4151,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .footer{
   background-color: #E84534;
+  margin: 0;
 }
 .img.portfolio{
   background-color: #fff;
@@ -4390,3 +4391,20 @@ table.hover tr:nth-of-type(even):hover {
 .social-icons .fa-windows{background-color:#12B6F3;}
 .social-icons .fa-xing,.social-icons .fa-xing-square{background-color:#00555C;}
 .social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
+
+.aboutImg{
+  background: url("/images/lara-t.jpg") no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  height: inherit;
+}
+.block {
+  float: right;
+  width: 50%;
+  margin: 20px 20px 0 0;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.3);
+}
