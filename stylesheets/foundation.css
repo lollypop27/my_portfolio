@@ -4394,7 +4394,7 @@ table.hover tr:nth-of-type(even):hover {
 .social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
 
 .aboutImg{
-  background: url("../images/lara-t.jpg") no-repeat;
+  background: url("/images/lara-t.jpg") no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
@@ -4403,7 +4403,7 @@ table.hover tr:nth-of-type(even):hover {
   height: inherit;
 }
 .homeImg{
-  background: url("../images/Lara-t-w.jpg") no-repeat;
+  background: url("/images/Lara-t-w.jpg") no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
