@@ -13,7 +13,7 @@ require 'spec_helper'
     end
   end
   it 'displays the correct heading' do
-    expect(page).to have_selector('h1', text: 'Welcome to Lara Templemore-Waltesr Portfolio of Design and Code')
+    expect(page).to have_selector('h1', text: 'Welcome to Lara Templemore-Walters Portfolio of Design and Code')
   end
 
   # it 'shows link to facebook' do
