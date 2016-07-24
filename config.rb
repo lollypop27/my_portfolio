@@ -44,6 +44,9 @@ configure :build do
   # activate :minify_javascript
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-1288959-42'
+
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
