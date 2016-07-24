@@ -12,10 +12,13 @@ require 'spec_helper'
       expect(page).to have_content 'My Portfolio'
     end
   end
-
-  it 'shows link to facebook' do
-    expect(page).to have_css 'fa-facebook'
+  it 'displays the correct heading' do
+    expect(page).to have_selector('h1', text: 'Welcome to Lara Templemore-Waltesr Portfolio of Design and Code')
   end
+
+  # it 'shows link to facebook' do
+  #   expect(page).to have_css 'fa-facebook'
+  # end
 
   it 'renders footer partial' do
   expect(page).to have_selector 'footer'

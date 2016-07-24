@@ -4401,6 +4401,15 @@ table.hover tr:nth-of-type(even):hover {
   background-position:center;
   height: inherit;
 }
+.homeImg{
+  background: url("/images/Lara-t-w.jpg") no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  height: inherit;
+}
 .block {
   float: right;
   width: 50%;
