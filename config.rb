@@ -48,3 +48,33 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+set :relative_links, true
+
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-1288959-42'
+
+  # Removing the last octet of the IP address (default = false)
+  ga.anonymize_ip = false
+
+  # Tracking across a domain and its subdomains (default = nil)
+  ga.domain_name = '//lollypop27.github.io/my_portfolio/'
+
+  # Tracking across multiple domains and subdomains (default = false)
+  ga.allow_linker = false
+
+  # Enhanced Link Attribution (default = false)
+  ga.enhanced_link_attribution = false
+
+  # Tracking Code Debugger (default = false)
+  ga.debug = false
+
+  # Tracking in development environment (default = true)
+  ga.development = true
+
+  # Compress the JavaScript code (default = false)
+  ga.minify = false
+
+  # Output style - :html includes <script> tag (default = :html)
+  ga.output = :js
+end
