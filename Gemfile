@@ -2,7 +2,7 @@
 source 'https://rubygems.org'
 
 # Middleman Gems
-gem 'middleman', '>= 4.0.0'
+gem 'middleman', '~> 4.1', '>= 4.1.9'
 gem 'middleman-livereload'
 gem 'middleman-sprockets', '~> 4.0.0.rc'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
@@ -19,6 +19,3 @@ group :development, :test do
   gem 'rspec'
   gem 'poltergeist'
 end
-
-#Google Analytics
-gem 'middleman-google-analytics', '~> 2.1'
